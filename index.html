@@ -1,11 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Ticketing</title>
+    <!-- tailwind and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary': '#1DD100',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-    
+    <header>
+        <!-- navbar -->
+        <nav class="mx-32 mt-14">
+            <div class="navbar bg-base-100 ">
+                <div class="navbar-start ">
+                    <h2 class="text-4xl font-extrabold w-auto h-10 ">P-Ticket</h2>
+                </div>
+                <div class="navbar-center gap-14">
+                    <a class="btn btn-ghost text-xs w-12">Home</a>
+                    <a class="btn btn-ghost text-xs w-12">About</a>
+                    <a class="btn btn-ghost text-xs w-12">Destination</a>
+                    <a class="btn btn-ghost text-xs w-12">Search</a>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn btn-lg px-8 py-4 btn-outline border-[#1dd10066]  bg-[#1dd1001a] w-32 h-14 flex-col">
+                        <h3 class="text-xl font-bold text-primary">Bus</h3>
+                        <img src="images/bus-icon.png" alt="bus icon">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- banner -->
+        <section class="mx-32 mt-9">
+            <div class="hero min-h-screen" style="background-image: url(images/banner.png);"> 
+                <div class="hero-content text-center text-neutral-content border mt-16">
+                    <div class="border  mx-52 ">
+                        <h1 class="mb-5 text-6xl font-extrabold">End-to-End Travel with</h1>
+                        <h1 class="mb-5 text-6xl font-extrabold">P Paribahan</h1>
+                        <p class="mb-5 text-xl font-normal">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
+                        <button class="btn bg-primary w-44 text-xl font-bold">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- coupon -->
+        <section>
+            
+        </section>
+
+    </main>
+
 </body>
+
 </html>
